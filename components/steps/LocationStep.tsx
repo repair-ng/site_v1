@@ -38,9 +38,9 @@ export function LocationStep({
     <JobTicket
       step="location"
       ticketNo={1}
-      eyebrow="request repairs in your area"
+      eyebrow=""
       title="Where do you need a repairman?"
-      subtitle="We are live in a handful of areas so far: pick yours to continue."
+      subtitle=""
     >
       <SearchableSelect
         options={LOCATIONS}
@@ -63,9 +63,8 @@ export function LocationStep({
           <button
             type="button"
             onClick={() => setNotifyOpen(true)}
-            className="text-sm font-medium text-teal underline decoration-teal/40 underline-offset-4 hover:text-tealDark"
-          >
-            More locations coming soon — click to be notified when repairs are available in your area
+            className="text-sm font-medium text-teal underline decoration-teal/40 underline-offset-4 hover:text-tealDark">
+            If you don't see your area, you can request to be notified when we launch there.
           </button>
         ) : notifyStatus === "sent" ? (
           <p className="text-sm text-success">
