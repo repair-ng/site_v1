@@ -19,9 +19,9 @@ export function ServiceStep({
     <JobTicket
       step="service"
       ticketNo={3}
-      eyebrow="Almost there"
-      title="What needs fixing?"
-      subtitle="Choose the closest match — the repairman will confirm the exact issue."
+      eyebrow="Closest match"
+      title="What needs fixing? "
+      subtitle=" Discuss the exact problem with the repairman."
       onBack={onBack}
     >
       <SearchableSelect

@@ -14,6 +14,7 @@ const config: Config = {
         navy: "#101826",
         navy2: "#1B2637",
         signal: "#F4650B", // hazard-orange accent: the "call the repairman" color
+        signalCool: "#1a69b8", // cooler version of signal for hover states
         signalDark: "#D6540A",
         teal: "#0FA3A3", // multimeter-LED accent for progress/confirm states
         tealDark: "#0C8484",

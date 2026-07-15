@@ -25,7 +25,7 @@ export function AddressStep({
       ticketNo={2}
       eyebrow={location ? location.name : "Your area"}
       title="What's your exact address?"
-      subtitle="This goes straight to the repairman assigned to your job — the more precise, the faster they'll find you."
+      subtitle="Help the Repairman Locate you"
       onBack={onBack}
     >
       <textarea
