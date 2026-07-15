@@ -38,9 +38,9 @@ export function LocationStep({
     <JobTicket
       step="location"
       ticketNo={1}
-      eyebrow="Start a repair request"
+      eyebrow="request repairs in your area"
       title="Where do you need a repairman?"
-      subtitle="We're live in a handful of areas so far — pick yours to continue."
+      subtitle="We are live in a handful of areas so far: pick yours to continue."
     >
       <SearchableSelect
         options={LOCATIONS}

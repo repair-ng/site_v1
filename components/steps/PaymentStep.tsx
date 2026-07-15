@@ -28,7 +28,7 @@ export function PaymentStep({
       ticketNo={5}
       eyebrow="Last step"
       title="Pay to get connected"
-      subtitle="A flat fee connects you to a vetted repairman on WhatsApp — no charge from us after that."
+      subtitle="A small fee to connect you to a trusted repairman using WhatsApp — no charge from us after that."
       onBack={onBack}
     >
       <div className="mb-4 space-y-1.5 text-sm">

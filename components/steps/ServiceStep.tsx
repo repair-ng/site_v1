@@ -21,7 +21,7 @@ export function ServiceStep({
       ticketNo={3}
       eyebrow="Almost there"
       title="What needs fixing?"
-      subtitle="Choose the closest match — the repairman will confirm the exact issue on WhatsApp."
+      subtitle="Choose the closest match — the repairman will confirm the exact issue."
       onBack={onBack}
     >
       <SearchableSelect

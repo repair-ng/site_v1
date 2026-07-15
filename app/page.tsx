@@ -20,12 +20,12 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-navy px-4 py-10">
       <div className="mb-8 flex items-center gap-2">
-        <div className="flex h-8 w-8 items-center justify-center rounded-md bg-signal font-display text-lg font-bold text-white">
-          F
-        </div>
         <span className="font-display text-xl font-semibold tracking-tight text-white">
-          RE-PAIR
+          RE
         </span>
+        <div className ="flex h-8 w-8 items-center justify-center rounded-md bg-signal font-display text-lg font-bold text-white">
+          PAIR
+        </div>
       </div>
 
       {step === "location" && (
