@@ -52,7 +52,7 @@ export const CONNECTION_FEE_NGN = 100;
 // The WhatsApp number (middleman line) that every paid connection is routed
 // to. Use the international format without "+" or leading zeros,
 // e.g. Nigerian number 0803 123 4567 -> "2348031234567".
-export const WHATSAPP_NUMBER = "2348000000000";
+export const WHATSAPP_NUMBER = "2348162510102";
 
 // Builds the pre-filled WhatsApp message the user's browser opens after a
 // successful payment, so the middleman immediately has what they need.
