@@ -7,7 +7,9 @@ import { ServiceStep } from "@/components/steps/ServiceStep";
 import { SignupStep } from "@/components/steps/SignupStep";
 import { PaymentStep } from "@/components/steps/PaymentStep";
 import { ConfirmationStep } from "@/components/steps/ConfirmationStep";
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { FlowState, initialFlowState, Step } from "@/lib/flow";
+import { HERO_IMAGES } from "@/lib/config";
 
 export default function Home() {
   const [step, setStep] = useState<Step>("location");
@@ -20,14 +22,14 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-navy px-4 py-10">
       <div className="mb-8 flex items-center gap-2">
-        
-        <span className="font-display text-xl font-semibold tracking-tight text-white">
-          RE
-        </span>
         <div className="flex h-8 w-8 items-center justify-center rounded-md bg-signal font-display text-lg font-bold text-white">
-          PAIR
+          R
         </div>
+        <span className="font-display text-xl font-semibold tracking-tight text-white">
+          RE-PAIR
+        </span>
       </div>
+
 
       {step === "location" && (
         <LocationStep
@@ -78,12 +80,18 @@ export default function Home() {
       )}
 
       {step === "confirmation" && <ConfirmationStep flow={flow} />}
-
+      {step === "location" && <HeroCarousel images={HERO_IMAGES} />}
       <p className="mt-10 text-center text-xs text-white/30">
         RE-PAIR connects you to independent repairmen. Payments are handled by
         our checkout partner and are non-refundable once a repairman is
         assigned.
       </p>
+      <a
+        href="/repairmen"
+        className="mt-3 text-center text-xs font-medium text-white/40 underline underline-offset-4 hover:text-white/70"
+      >
+        Repair pro? See available jobs
+      </a>
     </main>
   );
 }

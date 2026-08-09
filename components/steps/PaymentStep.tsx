@@ -18,7 +18,7 @@ export function PaymentStep({
   const [error, setError] = useState<string | null>(null);
   const location = LOCATIONS.find((l) => l.id === flow.locationId);
   const service = SERVICES.find((s) => s.id === flow.serviceId);
-  const reference = `FXM-${Date.now()}`;
+  const reference = `REP-${Date.now()}`;
 
   if (!flow.user || !location || !service) return null;
 
