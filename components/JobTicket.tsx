@@ -51,7 +51,7 @@ export function JobTicket({
           </span>
         </div>
 
-        <div className="mb-1 font-mono text-[11px] uppercase tracking-[0.2em] text-signal">
+        <div className="mb-1 font-body text-[11px] uppercase tracking-[0.2em] text-signal">
           {eyebrow}
         </div>
         <h1 className="font-display text-[32px] font-semibold leading-[1.05] tracking-tight text-navy">

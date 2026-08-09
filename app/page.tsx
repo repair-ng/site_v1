@@ -30,6 +30,7 @@ export default function Home() {
         </span>
       </div>
 
+      {step === "location" && <HeroCarousel images={HERO_IMAGES} />}
 
       {step === "location" && (
         <LocationStep
@@ -80,7 +81,7 @@ export default function Home() {
       )}
 
       {step === "confirmation" && <ConfirmationStep flow={flow} />}
-      {step === "location" && <HeroCarousel images={HERO_IMAGES} />}
+
       <p className="mt-10 text-center text-xs text-white/30">
         RE-PAIR connects you to independent repairmen. Payments are handled by
         our checkout partner and are non-refundable once a repairman is
